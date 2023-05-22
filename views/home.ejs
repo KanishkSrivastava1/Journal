@@ -1,0 +1,20 @@
+<%- include("header"); %>
+
+
+<div class=".container-lg m5">
+    <div class="card-body log">
+        <h5 class="card-title "><b>HOME</b></h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos voluptate fugiat accusamus eos at aliquam nihil ipsam doloremque, aut repudiandae? Deserunt nisi distinctio in reprehenderit, delectus magni quasi ratione.</p>
+    </div>
+    <% for(var i = 0; i < posts.length; i++){ %>
+        <div class="card-body log">
+          <h5 class="card-title"><b><%= posts[i].title%></b></h5>
+          <p class="card-text">
+            <%= (posts[i].content).slice(0, 100) + "…" %>
+          <a href="/post/<%=posts[i].title %>" class="">Go somewhere</a></p>
+        </div>
+      <% } %>
+</div>
+
+<%-include("footer"); %>
+    

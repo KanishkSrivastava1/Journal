@@ -1,0 +1,16 @@
+<%-include("header")%>
+<div class="container-lg m5">
+    <form action="/" method="post">
+        <h5>Compose</h5>
+        <div class="mb-3">
+          <label  class="form-label">Title</label>
+          <input type="text" name="title" class="form-control" >
+        </div>
+        <div class="mb-3">
+          <label  class="form-label">Post</label>
+          <textarea class="form-control" name="postbody" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-dark btn-sm m5px">Publish!</button>
+    </form>
+</div>
+<%-include("footer")%>
